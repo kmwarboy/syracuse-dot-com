@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   background-color: #d44500;
+  font-size: 16px;
 }
 
 .container {
@@ -22,7 +23,6 @@ body {
     margin: 0 auto;
   }
 }
-
 @media all and (min-width: 1000px) {
   body {
     background-color: blue;
@@ -36,8 +36,29 @@ header {
   background-color: black;
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+header .search-bar {
+  height: 50px;
+  right: 0;
+  bottom: -60px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid gray;
+}
+header .search-bar #search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header input {
+  border: none;
+  width: 75%;
+  height: 50px;
+  padding: 0;
+}
 footer {
   background-color: #375772;
   padding: 10px;
@@ -56,6 +77,56 @@ h1 {
 .showcase .primary {
   background-color: purple;
   min-height: 500px;
+}
+
+.showcase-row {
+  display: flex;
+  margin: 0 auto;
+}
+
+.secondary {
+  background-color: red;
+  width: 50%;
+}
+
+.showcase-right {
+  background-color: orange;
+  min-height: 200px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.showcase-right .tertiary {
+  width: 50%;
+  min-height: 100px;
+}
+
+.trending {
+  background-color: yellow;
+  padding: 1rem 0;
+}
+.trending h2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.trending .trending-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trending .trending-row .trending-item {
+  background-color: pink;
+  width: calc((100% - 2rem)/3);
+  margin: 0.5rem;
+}
+.trending .trending-row .trending-item:nth-child(3n+1) {
+  background-color: aqua;
+  margin-left: 0;
+}
+.trending .trending-row .trending-item:nth-child(3n+3) {
+  background-color: hotpink;
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

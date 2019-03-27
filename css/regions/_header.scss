@@ -2,4 +2,32 @@ header {
     background-color: black;
     color: white;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search-bar {
+        height: 50px;
+        right: 0;
+        bottom:-60px;
+        background-color: white;
+        width: 100%;
+        border: 1px solid gray;
+        // display: none;
+        #search {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    input {
+        border: none;
+        width: 75%;
+        height: 50px;
+        padding: 0;
+    }
+
+    button {
+        
+    }
 }
