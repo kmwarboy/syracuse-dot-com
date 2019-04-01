@@ -1,0 +1,31 @@
+.article {
+    h2 {
+        font-family: $primaryFont;
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+    }
+    h3 {
+        @include buildFont($primaryFont, 1rem, white);
+        background-color: $syrOrange;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: .2rem;
+        border-radius: 50px;
+    }
+    p {
+        @include buildFont($primaryFont, 1rem, white);
+        font-weight: normal;
+    }
+    h4 {
+        @include buildFont($primaryFont, 1rem, white);
+        font-weight: normal;
+    }
+}
+
+.componentIcon {
+    width: 1rem;
+    height: auto;
+    border-radius: 100%;
+}

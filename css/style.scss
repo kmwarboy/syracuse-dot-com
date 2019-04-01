@@ -4,6 +4,9 @@
 
 @import 'regions/header',
         'regions/footer',
-        'regions/sidebar';
+        'regions/sidebar',
+        'regions/banner';
+
+@import 'components/article';
 
 @import 'views/home';

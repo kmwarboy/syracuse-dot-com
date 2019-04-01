@@ -7,24 +7,43 @@
     <title>Syracuse.com | Syracuse, NY</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            Header
-            <div class="search-bar">
-                <form action="" id="search">
-                    <input type="text" placeholder="Search for articles">
-                    <button type="submit">Search</button>
-                </form>
-            </div> <!-- /searchBar -->
+            <div class="headerRow">
+                <a href="#" id="menuBtn">
+                    <img src="images/bars-solid.svg" alt="menu button" class="headerIcon">
+                </a>
+                <a href="#" id="logo">
+                    <img src="images/syracuse-com-logo.svg" alt="syracuse-com-logo" class="logo">
+                </a>
+                <a href="#" id="searchBtn">
+                    <img src="images/search-solid.svg" alt="search button" class="headerIcon">
+                </a>
+            </div> <!-- /row -->
         </div><!-- /container -->
     </header>
     <main>
         <section class="showcase">
             <div class="container">
-                <article class="primary">
-                    Primary article goes here.
+                <article class="article primary">
+                    <img src="images/lacrosse-large.jpg" alt="lacrosse win" class="articleImg">
+                    <div class="imgText">
+                        <h3>Sports</h3>
+                        <h2>Syracuse lacrosse vs. Rutgers:<br>
+                        Live updates, fan chat
+                        </h2>
+                        <p>The Orange take on the Scarlet Knights at 1 p.m. Saturday at the Carrier Dome.
+                        </p>
+                        <h4>
+                            <span><img src="images/clock-regular.svg" alt="time stamp icon" class="componentIcon"></span>
+                            <span>Posted 1hr ago</span>
+                            <span><img src="images/profile.jpg" alt="author image" class="componentIcon"></span>
+                            <span>By John Smith</span>
+                        </h4>
+                    </div>
                 </article>
             <div class="showcase-row">
                 <article class="secondary">
@@ -53,9 +72,25 @@
             </div><!-- /container -->
         </section>
     </main>
+    <section class="banner">
+        <a href="#">
+            <img src="images/960x250-ad.jpeg" alt="fuccillo kia ad" class="bannerImg">
+        </a>
+    </section>
     <footer>
         <div class="container">
-            Footer stuff goes here.
+            <div class="footerRow">
+                <img src="images/syracuse-com-logo.svg" alt="syracuse-com-logo" class="footerLogo">
+                <h4>&copy; 2019 Advance Media New York. All rights reserved.<br><br>
+                The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Advance Media New York.
+                </h4>
+                <span>
+                    <img src="images/facebook-logo.svg" alt="facebook" class="socialIcon">
+                    <img src="images/twitter-logo.svg" alt="twitter" class="socialIcon">
+                    <img src="images/instagram-logo.svg" alt="instagram" class="socialIcon">
+                    <img src="images/youtube-logo.svg" alt="youtube" class="socialIcon">
+                </span>
+            </div>
         </div><!-- /container -->
     </footer>
     <!-- <script src="js/main.js"></script>-->

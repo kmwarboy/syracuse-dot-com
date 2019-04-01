@@ -13,6 +13,11 @@ body {
   margin: 0 auto;
 }
 
+.articleImg {
+  width: 100%;
+  height: auto;
+}
+
 @media all and (min-width: 700px) {
   body {
     background-color: green;
@@ -36,32 +41,104 @@ header {
   background-color: black;
   color: white;
   padding: 10px;
+}
+header .headerRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .search-bar {
-  height: 50px;
-  right: 0;
-  bottom: -60px;
-  background-color: white;
-  width: 100%;
-  border: 1px solid gray;
+header .headerIcon {
+  width: 20px;
+  height: auto;
 }
-header .search-bar #search {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+header .logo {
+  width: 200px;
+  height: auto;
 }
-header input {
-  border: none;
-  width: 75%;
-  height: 50px;
-  padding: 0;
-}
+
 footer {
   background-color: #375772;
   padding: 10px;
+}
+footer h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6rem;
+  color: white;
+  font-weight: normal;
+  width: 500px;
+  text-overflow: clip;
+  margin-bottom: 0.5rem;
+}
+
+.footerLogo {
+  width: 200px;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.socialIcon {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 0.3rem;
+}
+
+.banner {
+  background-color: #dddddd;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+.banner .bannerImg {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .banner .bannerImg {
+    width: 700px;
+    height: auto;
+    margin: 1rem;
+  }
+}
+
+.article h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+.article h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #ec912d;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 50px;
+}
+.article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+.article h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+
+.componentIcon {
+  width: 1rem;
+  height: auto;
+  border-radius: 100%;
 }
 
 h1 {
@@ -75,30 +152,54 @@ h1 {
   color: white;
 }
 .showcase .primary {
-  background-color: purple;
-  min-height: 500px;
+  position: relative;
 }
-
-.showcase-row {
-  display: flex;
+@media (min-width: 768px) {
+  .showcase .primary .imgText {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+.showcase .showcase-row {
+  display: block;
   margin: 0 auto;
 }
-
-.secondary {
-  background-color: red;
-  width: 50%;
+@media (min-width: 768px) {
+  .showcase .showcase-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
-.showcase-right {
+.showcase .showcase-row .secondary {
+  background-color: red;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-row .secondary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+.showcase .showcase-row .showcase-right {
   background-color: orange;
   min-height: 200px;
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
 }
-.showcase-right .tertiary {
-  width: 50%;
+.showcase .showcase-row .showcase-right .tertiary {
+  width: 100%;
   min-height: 100px;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-row .showcase-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .showcase .showcase-row .showcase-right .tertiary {
+    width: 50%;
+  }
 }
 
 .trending {
@@ -106,27 +207,31 @@ h1 {
   padding: 1rem 0;
 }
 .trending h2 {
-  font-family: Arial;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.trending .trending-row {
+.trending .trending-row .trending-item {
   display: flex;
   flex-wrap: wrap;
-}
-.trending .trending-row .trending-item {
   background-color: pink;
-  width: calc((100% - 2rem)/3);
-  margin: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
 }
-.trending .trending-row .trending-item:nth-child(3n+1) {
-  background-color: aqua;
-  margin-left: 0;
-}
-.trending .trending-row .trending-item:nth-child(3n+3) {
-  background-color: hotpink;
-  margin-right: 0;
+@media (min-width: 768px) {
+  .trending .trending-row .trending-item {
+    width: calc((100% - 2rem)/3);
+    margin: 0.5rem;
+  }
+  .trending .trending-row .trending-item:nth-child(3n+1) {
+    background-color: aqua;
+    margin-left: 0;
+  }
+  .trending .trending-row .trending-item:nth-child(3n+3) {
+    background-color: hotpink;
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

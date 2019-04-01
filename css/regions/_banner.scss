@@ -1,0 +1,17 @@
+.banner {
+    background-color: #dddddd;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: .3rem;
+    display: flex;
+    justify-content: center;
+    .bannerImg {
+        width: 100%;
+        height: auto;
+        @include breakpoint(sm) {
+            width: 700px;
+            height: auto;
+            margin: 1rem;
+        }
+    }
+}
