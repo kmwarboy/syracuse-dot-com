@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-  background-color: #d44500;
+  background-color: black;
   font-size: 16px;
 }
 
@@ -20,7 +20,7 @@ body {
 
 @media all and (min-width: 700px) {
   body {
-    background-color: green;
+    background-color: black;
   }
 
   .container {
@@ -30,7 +30,7 @@ body {
 }
 @media all and (min-width: 1000px) {
   body {
-    background-color: blue;
+    background-color: black;
   }
 
   .container {
@@ -58,22 +58,36 @@ header .logo {
 
 footer {
   background-color: #375772;
-  padding: 10px;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 footer h4 {
   font-family: "Roboto", sans-serif;
   font-size: 0.6rem;
   color: white;
   font-weight: normal;
-  width: 500px;
-  text-overflow: clip;
   margin-bottom: 0.5rem;
+}
+
+.textBox {
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .textBox {
+    width: 700px;
+    height: auto;
+    margin: 1rem 0;
+  }
 }
 
 .footerLogo {
   width: 200px;
   height: auto;
-  margin: 1rem 0;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .socialIcon {
@@ -82,7 +96,7 @@ footer h4 {
   padding: 5px;
   border: 1px solid white;
   border-radius: 100%;
-  margin: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .banner {
@@ -135,6 +149,56 @@ footer h4 {
   font-weight: normal;
 }
 
+.secondary h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.secondary h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 50px;
+}
+.secondary p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+.secondary h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+
+.tertiary h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+.tertiary h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6rem;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 50px;
+}
+
 .componentIcon {
   width: 1rem;
   height: auto;
@@ -172,7 +236,7 @@ h1 {
   }
 }
 .showcase .showcase-row .secondary {
-  background-color: red;
+  background-color: black;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -183,7 +247,7 @@ h1 {
   }
 }
 .showcase .showcase-row .showcase-right {
-  background-color: orange;
+  background-color: black;
   min-height: 200px;
   width: 100%;
 }
@@ -195,15 +259,21 @@ h1 {
   .showcase .showcase-row .showcase-right {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     width: 50%;
   }
   .showcase .showcase-row .showcase-right .tertiary {
-    width: 50%;
+    margin: 0 0 0.3rem 0.3rem;
+    width: calc(50% - .6rem);
+  }
+  .showcase .showcase-row .showcase-right .tertiary .articleImg {
+    width: 100%;
+    height: 150px;
   }
 }
 
 .trending {
-  background-color: yellow;
+  background-color: white;
   padding: 1rem 0;
 }
 .trending h2 {
@@ -212,9 +282,11 @@ h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.trending .trending-row .trending-item {
+.trending .trending-row {
   display: flex;
   flex-wrap: wrap;
+}
+.trending .trending-row .trending-item {
   background-color: pink;
   width: 100%;
   margin: 0.5rem 0;

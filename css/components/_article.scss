@@ -23,6 +23,51 @@
         font-weight: normal;
     }
 }
+.secondary {
+    h2 {
+        font-family: $primaryFont;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+    }
+    h3 {
+        @include buildFont($primaryFont, 1rem, white);
+        background-color: blue;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: .2rem;
+        padding: .2rem;
+        border-radius: 50px;
+    }
+    p {
+        @include buildFont($primaryFont, 1rem, white);
+        font-weight: normal;
+    }
+    h4 {
+        @include buildFont($primaryFont, 1rem, white);
+        font-weight: normal;
+    }
+}
+.tertiary {
+    h2 {
+        font-family: $primaryFont;
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+    }
+    h3 {
+        @include buildFont($primaryFont, .6rem, white);
+        background-color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: .2rem;
+        padding: .2rem;
+        border-radius: 50px;
+    }
+}
+
 
 .componentIcon {
     width: 1rem;

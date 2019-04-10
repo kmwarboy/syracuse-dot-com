@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-    background-color: #d44500;
+    background-color: black;
     font-size: 16px;
 }
 
@@ -20,7 +20,7 @@ body {
 
 @media all and (min-width: 700px) {
     body {
-        background-color: green;
+        background-color: black;
     }
     .container {
         width: 96%;
@@ -30,7 +30,7 @@ body {
 
 @media all and (min-width: 1000px) {
     body {
-        background-color: blue;
+        background-color: black;
     }
     .container {
         width: 1000px;

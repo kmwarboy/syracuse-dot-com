@@ -1,25 +1,35 @@
 footer {
     background-color: $syrblue;
-    padding: 10px;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
     h4 {
         @include buildFont($primaryFont, .6rem, white);
         font-weight: normal;
-        width: 500px;
-        text-overflow: clip;
         margin-bottom: .5rem;
+    }
+}
+.textBox {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    @include breakpoint(sm) {
+        width: 700px;
+        height: auto;
+        margin: 1rem 0;
     }
 }
 .footerLogo {
     width: 200px;
     height: auto;
-    margin: 1rem 0;
+    margin: 1rem 0 .5rem 0;
 }
-
 .socialIcon {
     width: 15px;
     height: 15px;
     padding: 5px;
     border: 1px solid white;
     border-radius: 100%;
-    margin: .3rem;
+    margin-right: .3rem;
 }
